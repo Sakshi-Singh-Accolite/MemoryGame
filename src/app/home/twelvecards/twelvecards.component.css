@@ -1,0 +1,99 @@
+/* Add these styles to your component's CSS file or styles.scss */
+
+/* Add these styles to your component's CSS file or styles.scss */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1; /* Clouds color for the background */
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%; /* Adjust the width based on your design */
+    margin: 20px auto; /* Center the rows and add some margin */
+  }
+  
+  .row app-card {
+    margin: 10px; /* Adjust the margin between cards */
+    flex-basis: calc(16.666% - 20px); /* 16.666% to fit exactly 6 cards with margins in a row */
+    box-sizing: border-box;
+  }
+  
+  /* Optional: Give a subtle box-shadow to cards for a card-like appearance */
+  app-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  header {
+    background-color: #3498db;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #2980b9;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Adjust the height based on your design */
+    background-color: #ecf0f1; /* Clouds color for the background */
+  }
+  
+  
+  .scoreboard {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .scoreboard p {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #2c3e50; /* Midnight blue color for the text */
+  }
+  
+  .navbar {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align:center;
+    margin:20px;
+    background-color: blueviolet; /* Blue color for the background */
+    padding: 10px 20px;
+
+    flex-direction: row;
+  
+    color: #ecf0f1;
+    
+    padding: 20px;
+    /* font-size: 24px; */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #2980b9;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ecf0f1; /* Clouds color for the text */
+    font-size: 18px;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }

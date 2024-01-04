@@ -1,0 +1,24 @@
+<nav class="navbar">
+  <h1>Memory Card Game With 6 Cards</h1>
+  <a routerLink="/" >Home</a>
+</nav>
+<!-- <header>
+    Six Cards Memory Game
+</header> -->
+
+
+<div class="card-container">
+    <div class="row">
+      <app-card
+        *ngFor="let card of cardObjects"
+        [frontImage]="'./assets/face.jpg'"
+        [backImage]="card.backImage"
+        (cardClicked)="onCardClicked($event)"
+      ></app-card>
+    </div>
+  </div>
+  <div class="scoreboard">
+    <p>Moves: {{ moves }}</p>
+    <p>Misses: {{ misses }}</p>
+    <p>Accuracy: {{getAccuracy()}}%</p>
+  </div>
